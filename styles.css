@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.playstationContainer, .xboxContainer {
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    transition: width 1s ease;
+}
+
+.playstationColor, .xboxColor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.playstationColor {
+    background-color: rgba(0,100,255, 0.5);
+}
+
+.xboxColor {
+    background-color: rgba(18, 18, 18, 0.8);
+}
+
+.playstationContainer {
+    background-image: url('https://cdn.vox-cdn.com/thumbor/P89rPylJxk7ks3FVw5HDE9mgds8=/0x173:2450x1456/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/20081590/ps5.png');
+}
+
+.xboxContainer {
+    background-image: url('https://i.ytimg.com/vi/0tUqIHwHDEc/maxresdefault.jpg');
+}
+
+.xboxContainer.hovered, .playstationContainer.hovered {
+    width: 100%;
+    transition: width 1s ease;
+}
+
+h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+button {
+    padding: 25px 70px;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
